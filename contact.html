@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Your Company Name</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">YOUR<span>COMPANY</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Get In Touch</p>
+      <h1>Let's talk</h1>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CONTENT ===== -->
+  <section class="section">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h2>Contact details</h2>
+        <p class="info-row"><strong>Email:</strong> youremail@company.com</p>
+        <p class="info-row"><strong>Phone:</strong> +91 00000 00000</p>
+        <p class="info-row"><strong>Address:</strong> Your office address, City, State, India</p>
+        <p class="info-row"><strong>Hours:</strong> Mon - Sat, 9:00 AM - 6:00 PM</p>
+      </div>
+
+      <!--
+        NOTE FOR EDITING: This form uses Formspree (free) so it actually
+        sends emails without needing a backend server.
+        Steps: go to formspree.io, sign up free, create a form,
+        copy YOUR form endpoint, and paste it in the action="" below
+        replacing the placeholder link.
+      -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+        <h2>Send a message</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">YOUR<span>COMPANY</span></a>
+        <p class="footer-tagline">Short tagline about your company goes here.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>youremail@company.com</p>
+        <p>+91 00000 00000</p>
+        <p>City, State, India</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Your Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
